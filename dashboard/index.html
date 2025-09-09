@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Phishing Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-shield-alt"></i> Phishing Simulation Dashboard</h1>
+            <p>Monitoramento de atividades educacionais contra phishing</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-mouse-pointer"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="total-clicks">0</h3>
+                    <p>Cliques Registrados</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-key"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="login-attempts">0</h3>
+                    <p>Tentativas de Login</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="search-queries">0</h3>
+                    <p>Pesquisas Realizadas</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-info">
+                    <h3 id="unique-users">0</h3>
+                    <p>Usuários Únicos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="actions-list">
+                <h2>Atividades Recentes</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="login_attempt">Logins</button>
+                    <button class="filter-btn" data-filter="link_click">Cliques</button>
+                    <button class="filter-btn" data-filter="search_query">Pesquisas</button>
+                </div>
+                <div id="activities-container">
+                    <p>Carregando atividades...</p>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="chart-card">
+                    <h2>Distribuição de Atividades</h2>
+                    <canvas id="activityChart" width="400" height="300"></canvas>
+                </div>
+                <div class="chart-card">
+                    <h2>Atividades ao Longo do Tempo</h2>
+                    <canvas id="timelineChart" width="400" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
