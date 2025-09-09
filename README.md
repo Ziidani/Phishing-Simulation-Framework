@@ -45,9 +45,10 @@ This framework was developed to:
 - Charts for data visualization  
 
 ## 🛡️ Prints
-
+# Phising webpage
 ![Screenshot phishing](screenshot/screenshot_phishing.png)
 
+# Dashboard webpage
 ![Screenshot dashboard](screenshot/screenshot_dashboard.png)
 
 ## 🛠️ Technologies Used
