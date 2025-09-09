@@ -44,6 +44,12 @@ This framework was developed to:
 - Filters to analyze different types of activity  
 - Charts for data visualization  
 
+## 🛡️ Prints
+
+![Screenshot phishing](screenshot/screenshot_phishing.png)
+
+![Screenshot dashboard](screenshot/screenshot_dashboard.png)
+
 ## 🛠️ Technologies Used
 
 - HTML5, CSS3, JavaScript  
